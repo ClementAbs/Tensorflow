@@ -3,10 +3,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from tensorflow.keras import layers, models
-
+from model, layers import model, layers
 # Charger les données depuis un fichier CSV
-data = pd.read_csv('C:\\Users\\moi\\Documents\\myfile.csv')  # Remplace par le chemin de ton fichier CSV
+data = pd.read_csv('C:\\Users\\moi\\Documents\\packageanalyse.csv')  # Remplace par le chemin de ton fichier CSV
 
 # Afficher les noms de colonnes pour identifier la colonne cible
 print("Noms de colonnes :", data.columns)
